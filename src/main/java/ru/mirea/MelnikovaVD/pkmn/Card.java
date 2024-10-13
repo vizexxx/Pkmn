@@ -18,7 +18,7 @@ public class Card {
 
     public Card(PokemonStage pokemonStage, String name, Integer hp, EnergyType pokemonType,
                 Card evolvesFrom, List<AttackSkill> skills, EnergyType weaknessType, EnergyType resistanceType,
-                String retreatCost, String gameSet, char regulationMark)
+                String retreatCost, String gameSet, char regulationMark, Student pokemonOwner)
     {
         this.pokemonStage = pokemonStage;
         this.name = name;
@@ -31,6 +31,7 @@ public class Card {
         this.retreatCost = retreatCost;
         this.gameSet = gameSet;
         this.regulationMark = regulationMark;
+        this.pokemonOwner = pokemonOwner;
     }
 
     public PokemonStage getPokemonStage()
