@@ -6,6 +6,11 @@ public class Student {
     private String familyName;
     private String group;
 
+    public Student()
+    {
+
+    }
+
     public Student(String firstName, String surName, String familyName, String group)
     {
         this.firstName = firstName;
@@ -53,6 +58,6 @@ public class Student {
     @Override
     public String toString()
     {
-        return firstName + "/" + surName + "/" + familyName + "/'" + group;
+        return firstName + "/" + surName + "/" + familyName + "/" + group;
     }
 }

@@ -1,17 +1,17 @@
 package ru.mirea.MelnikovaVD.pkmn;
 
 public enum EnergyType {
-    FIRE("Fire"),
-    GRASS("Grass"),
-    WATER("Water"),
-    LIGHTNING("Lightning"),
-    PSYCHIC("Psychic"),
-    FIGHTING("Fighting"),
-    DARKNESS("Darkness"),
-    METAL("Metal"),
-    FAIRY("Fairy"),
-    DRAGON("Dragon"),
-    COLORLESS("Colorless");
+    FIRE("FIRE"),
+    GRASS("GRASS"),
+    WATER("WATER"),
+    LIGHTNING("LIGHTNING"),
+    PSYCHIC("PSYCHIC"),
+    FIGHTING("FIGHTING"),
+    DARKNESS("DARKNESS"),
+    METAL("METAL"),
+    FAIRY("FAIRY"),
+    DRAGON("DRAGON"),
+    COLORLESS("COLORLESS");
 
     private String energyType;
 

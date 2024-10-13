@@ -16,6 +16,16 @@ public class Card {
     private char regulationMark;
     private Student pokemonOwner;
 
+    public Card()
+    {
+
+    }
+
+    public Card (String name)
+    {
+        this.name = name;
+    }
+
     public Card(PokemonStage pokemonStage, String name, Integer hp, EnergyType pokemonType,
                 Card evolvesFrom, List<AttackSkill> skills, EnergyType weaknessType, EnergyType resistanceType,
                 String retreatCost, String gameSet, char regulationMark, Student pokemonOwner)

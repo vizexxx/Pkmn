@@ -1,11 +1,11 @@
-1. Stage 1
+1. STAGE1
 2. Corvisquire
 3. 80
-4. Colorless
+4. COLORLESS
 5. Rookidee
 6. 2/Fury Attack/30
-7. Lighting
-8. Fighting
+7. LIGHTNING
+8. FIGHTING
 9. 1
 10. Sword&Shield Series Fusion Strike
 11. E

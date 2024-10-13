@@ -1,11 +1,11 @@
 package ru.mirea.MelnikovaVD.pkmn;
 
 public enum PokemonStage {
-    BASIC("Basic"),
-    STAGE1("Stage 1"),
-    STAGE2("Stage 2"),
-    VSTAR("VStar"),
-    VMAX("VMax");
+    BASIC("BASIC"),
+    STAGE1("STAGE1"),
+    STAGE2("STAGE2"),
+    VSTAR("VSTAR"),
+    VMAX("VMAX");
 
     private String pokemonStage;
 
