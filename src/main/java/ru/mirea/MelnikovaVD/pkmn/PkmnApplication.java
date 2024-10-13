@@ -6,7 +6,7 @@ public class PkmnApplication
     {
         CardImport cardImport = new CardImport();
         Card myCard = cardImport.readFromFile("D:\\Java\\Pkmn\\src\\main\\resources\\my_card.txt");
-        System.out.printf("Карточка покемона:\n");
+        System.out.printf("\u001b[38;5;111m\nTask PKMN:\u001b[38;5;0m\n");
         System.out.printf(String.valueOf(myCard));
     }
 }

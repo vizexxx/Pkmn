@@ -154,9 +154,16 @@ public class Card {
 
     @Override
     public String toString() {
-        return "1. " + pokemonStage + "\n" + "2. " + name + "\n" + "3. " + hp + "\n" +
+
+        if (this.pokemonStage!=PokemonStage.BASIC)
+            return "\u001b[38;5;111mMain pokemon:\u001b[38;5;0m \n1. " + pokemonStage + "\n" + "2. " + name + "\n" + "3. " + hp + "\n" +
                 "4. " + pokemonType + "\n" + "5. " + evolvesFrom + "\n" + "6. " + skills + "\n" +
                 "7. " + weaknessType + "\n" + "8. " + resistanceType + "\n" + "9. " + retreatCost + "\n" +
                 "10. " + gameSet + "\n" + "11. " + regulationMark + "\n" + "12. " + pokemonOwner;
+        else
+            return "\u001b[38;5;111m\nBasic pokemon:\u001b[38;5;0m \n1. " + pokemonStage + "\n" + "2. " + name + "\n" + "3. " + hp + "\n" +
+                    "4. " + pokemonType + "\n" + "5. " + evolvesFrom + "\n" + "6. " + skills + "\n" +
+                    "7. " + weaknessType + "\n" + "8. " + resistanceType + "\n" + "9. " + retreatCost + "\n" +
+                    "10. " + gameSet + "\n" + "11. " + regulationMark + "\n" + "12. " + pokemonOwner + "\n";
     }
 }
