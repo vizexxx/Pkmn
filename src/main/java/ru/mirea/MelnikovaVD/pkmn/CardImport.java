@@ -1,6 +1,7 @@
 package ru.mirea.MelnikovaVD.pkmn;
 
 import java.io.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,6 +49,23 @@ public class CardImport
             }
             else
                 card.setPokemonOwner(null);
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return card;
+    }
+
+    public Card importFromFile(String fileName)
+    {
+        Card card = null;
+        try
+        {
+            FileInputStream fileInput = new FileInputStream(fileName);
+            ObjectInputStream objectInput = new ObjectInputStream(fileInput);
+            card = (Card) objectInput.readObject();
+            System.out.println("Десериализация выполнена.");
         }
         catch (Exception e)
         {
