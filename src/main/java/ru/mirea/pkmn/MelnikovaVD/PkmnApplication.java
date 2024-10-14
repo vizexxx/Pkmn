@@ -9,8 +9,8 @@ public class PkmnApplication
         CardImport cardImport = new CardImport();
         Card myCard = cardImport.readFromFile("D:\\Java\\Pkmn\\src\\main\\resources\\my_card.txt");
         System.out.printf("\u001b[38;5;111m\nTask PKMN:\u001b[38;5;0m\n");
-        CardExport.ExportToFile(myCard.toString(),myCard);
-        myCard = cardImport.importFromFile("D:\\Java\\Pkmn\\Palossand.crd");
+        CardExport.ExportToFile(myCard);
+        myCard = cardImport.importFromFile("D:\\Java\\Pkmn\\card_for_lera.crd");
         System.out.printf(myCard.toString());
     }
 }

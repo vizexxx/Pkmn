@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.List;
 
 public class Card implements Serializable {
-    public static final long serialVersionUID = 1L;
     private PokemonStage pokemonStage;
     private String name;
     private Integer hp;
@@ -17,6 +16,7 @@ public class Card implements Serializable {
     private String gameSet;
     private char regulationMark;
     private Student pokemonOwner;
+    public static final long serialVersionUID = 1L;
 
     public Card()
     {

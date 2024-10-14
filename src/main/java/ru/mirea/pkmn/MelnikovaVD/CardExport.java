@@ -6,7 +6,8 @@ import java.io.*;
 
 public class CardExport
 {
-    public static void ExportToFile(String stringCard, Card card)
+    public static final long serialVersionUID = 1L;
+    public static void ExportToFile(Card card)
     {
         String fileName = card.getName() + ".crd";
         FileOutputStream myFile = null;
@@ -14,8 +15,8 @@ public class CardExport
         {
             myFile = new FileOutputStream(fileName);
             ObjectOutputStream out = new ObjectOutputStream(myFile);
-            out.writeObject(stringCard);
-            System.out.println("Exported to " + fileName);
+            out.writeObject(card);
+            System.out.println("Сериализация выполнена.");
         }
         catch (IOException e)
         {
