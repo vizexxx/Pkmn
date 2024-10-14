@@ -1,4 +1,6 @@
-package ru.mirea.MelnikovaVD.pkmn;
+package ru.mirea.pkmn.MelnikovaVD;
+
+import ru.mirea.pkmn.Card;
 
 import java.io.*;
 

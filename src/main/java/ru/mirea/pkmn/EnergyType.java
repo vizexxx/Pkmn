@@ -1,4 +1,4 @@
-package ru.mirea.MelnikovaVD.pkmn;
+package ru.mirea.pkmn;
 
 public enum EnergyType {
     FIRE("FIRE"),

@@ -1,4 +1,6 @@
-package ru.mirea.MelnikovaVD.pkmn;
+package ru.mirea.pkmn.MelnikovaVD;
+
+import ru.mirea.pkmn.*;
 
 import java.io.*;
 
@@ -7,9 +9,9 @@ import java.util.List;
 
 public class CardImport
 {
+    Card card = new Card();
     public Card readFromFile(String filename)
     {
-        Card card = new Card();
         try (BufferedReader reader = new BufferedReader(new FileReader(filename)))
         {
             card.setPokemonStage(PokemonStage.valueOf(reader.readLine().split(" ")[1]));
@@ -59,7 +61,6 @@ public class CardImport
 
     public Card importFromFile(String fileName)
     {
-        Card card = null;
         try
         {
             FileInputStream fileInput = new FileInputStream(fileName);
