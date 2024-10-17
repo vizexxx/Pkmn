@@ -6,7 +6,6 @@ import java.io.*;
 
 public class CardExport
 {
-    public static final long serialVersionUID = 1L;
     public static void ExportToFile(Card card)
     {
         String fileName = card.getName() + ".crd";

@@ -16,13 +16,13 @@ public class CardImport
         {
             card.setPokemonStage(PokemonStage.valueOf(reader.readLine().split(" ")[1]));
             card.setName(reader.readLine().split(" ")[1]);
-            card.setHp(Integer.valueOf(reader.readLine().split(" ")[1]));
+            card.setHp(Integer.parseInt(reader.readLine().split(" ")[1]));
             card.setPokemonType(EnergyType.valueOf(reader.readLine().split(" ")[1]));
             String lineEvolvesFrom = reader.readLine().split("\\. ")[1];
             if (!lineEvolvesFrom.equals("-"))
             {
                 CardImport cartImport2 = new CardImport();
-                Card card2 = cartImport2.readFromFile("D:\\Java\\Pkmn\\src\\main\\resources\\evolves_from.txt");
+                Card card2 = cartImport2.readFromFile(lineEvolvesFrom);
                 card.setEvolvesFrom(card2);
             }
             else
@@ -33,7 +33,7 @@ public class CardImport
             {
                 String[] meaningattack = i.split("/");
                 AttackSkill attack = new AttackSkill (meaningattack[1], "",
-                        meaningattack[0], Integer.valueOf(meaningattack[2]));
+                        meaningattack[0], Integer.parseInt(meaningattack[2]));
                 skillList.add(attack);
             }
             card.setSkills(skillList);

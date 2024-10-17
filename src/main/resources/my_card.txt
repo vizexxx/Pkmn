@@ -2,7 +2,7 @@
 2. Corvisquire
 3. 80
 4. COLORLESS
-5. Rookidee
+5. D:\Java\Pkmn\src\main\resources\evolves_from.txt
 6. 2/Fury Attack/30
 7. LIGHTNING
 8. FIGHTING

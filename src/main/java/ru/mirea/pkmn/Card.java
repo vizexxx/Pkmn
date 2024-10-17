@@ -6,7 +6,7 @@ import java.util.List;
 public class Card implements Serializable {
     private PokemonStage pokemonStage;
     private String name;
-    private Integer hp;
+    private int hp;
     private EnergyType pokemonType;
     private Card evolvesFrom;
     private List<AttackSkill> skills;
@@ -28,7 +28,7 @@ public class Card implements Serializable {
         this.name = name;
     }
 
-    public Card(PokemonStage pokemonStage, String name, Integer hp, EnergyType pokemonType,
+    public Card(PokemonStage pokemonStage, String name, int hp, EnergyType pokemonType,
                 Card evolvesFrom, List<AttackSkill> skills, EnergyType weaknessType, EnergyType resistanceType,
                 String retreatCost, String gameSet, char regulationMark, Student pokemonOwner)
     {
@@ -68,7 +68,7 @@ public class Card implements Serializable {
     {
         return hp;
     }
-    public void setHp(Integer hp)
+    public void setHp(int hp)
     {
         this.hp = hp;
     }

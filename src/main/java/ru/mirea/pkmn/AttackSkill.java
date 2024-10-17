@@ -6,10 +6,10 @@ public class AttackSkill implements Serializable {
     private String name;
     private String description;
     private String cost;
-    private Integer damage;
+    private int damage;
     public static final long serialVersionUID = 1L;
 
-    public AttackSkill(String name, String description, String cost, Integer damage)
+    public AttackSkill(String name, String description, String cost, int damage)
     {
         this.name = name;
         this.description = description;
@@ -44,11 +44,11 @@ public class AttackSkill implements Serializable {
         this.cost = cost;
     }
 
-    public Integer getDamage()
+    public int getDamage()
     {
         return damage;
     }
-    public void setDamage(Integer damage)
+    public void setDamage(int damage)
     {
         this.damage = damage;
     }
