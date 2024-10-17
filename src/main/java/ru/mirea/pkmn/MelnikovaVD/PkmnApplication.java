@@ -11,7 +11,7 @@ public class PkmnApplication
         System.out.printf("\u001b[38;5;111m\nTask PKMN:\u001b[38;5;0m\n");
         //System.out.printf(myCard.toString());
         CardExport.ExportToFile(myCard);
-        myCard = cardImport.importFromFile("D:\\Java\\Pkmn\\test_card.crd");
+        myCard = cardImport.importFromFile("D:\\Java\\Pkmn\\Morgrem.crd");
         System.out.printf(myCard.toString());
     }
 }

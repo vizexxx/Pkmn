@@ -156,16 +156,20 @@ public class Card implements Serializable {
 
     @Override
     public String toString() {
-
-        if (this.pokemonStage!=PokemonStage.BASIC)
-            return "\u001b[38;5;111mMain pokemon:\u001b[38;5;0m \n1. " + pokemonStage + "\n" + "2. " + name + "\n" + "3. " + hp + "\n" +
-                "4. " + pokemonType + "\n" + "5. " + evolvesFrom + "\n" + "6. " + skills + "\n" +
-                "7. " + weaknessType + "\n" + "8. " + resistanceType + "\n" + "9. " + retreatCost + "\n" +
-                "10. " + gameSet + "\n" + "11. " + regulationMark + "\n" + "12. " + pokemonOwner;
-        else
-            return "\u001b[38;5;111m\nBasic pokemon:\u001b[38;5;0m \n1. " + pokemonStage + "\n" + "2. " + name + "\n" + "3. " + hp + "\n" +
-                    "4. " + pokemonType + "\n" + "5. " + evolvesFrom + "\n" + "6. " + skills + "\n" +
-                    "7. " + weaknessType + "\n" + "8. " + resistanceType + "\n" + "9. " + retreatCost + "\n" +
-                    "10. " + gameSet + "\n" + "11. " + regulationMark + "\n" + "12. " + pokemonOwner + "\n";
+            return STR."""
+\{String.format("\u001b[38;5;111m%s pokemon:\u001b[38;5;15m \n" +
+                    "1. ", this.pokemonStage)}\{this.pokemonStage}
+2. \{name}
+3. \{hp}
+4. \{pokemonType}
+5. \{evolvesFrom}
+6. \{skills}
+7. \{weaknessType}
+8. \{resistanceType}
+9. \{retreatCost}
+10. \{gameSet}
+11. \{regulationMark}
+12. \{pokemonOwner}
+""";
     }
 }

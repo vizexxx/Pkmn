@@ -66,7 +66,7 @@ public class CardImport
             FileInputStream fileInput = new FileInputStream(fileName);
             ObjectInputStream objectInput = new ObjectInputStream(fileInput);
             card = (Card) objectInput.readObject();
-            System.out.println("Десериализация выполнена.");
+            System.out.println("\u001b[38;5;15mДесериализация выполнена.\n\u001b[38;5;0m");
         }
         catch (Exception e)
         {
